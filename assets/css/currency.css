@@ -1,0 +1,20 @@
+body {
+    background-color: #eff5f8;
+    font-family: "Roboto", sans-serif;
+}
+
+.button-color {
+    background-color: #6392a7;
+}
+
+.circle-color {
+    background-color: #78a374;
+}
+
+.font-color {
+    color: #6392a7;
+}
+
+.box-shadow {
+    box-shadow: 0px 8px 16px rgba(138, 177, 194, 0.28);
+}

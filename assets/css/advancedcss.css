@@ -1,0 +1,67 @@
+.box{
+  width: 200px;
+  height: 200px;
+  border: 1px solid gray;
+  margin: 50px;
+}
+
+@keyframes animation1 {
+  /* from { background-color: bisque; }
+  to { background-color: turquoise; } */
+
+  0% { background-color: aliceblue; width: 25px; }
+  25% { background-color: aquamarine; width: 250px;}
+  50% { background-color: blue; width: 200px; }
+  75% { background-color: yellow; width: 100px; }
+  100% { background-color: olive; width: 200px; }
+}
+
+.animation1 {
+  animation-name: animation1;
+  animation-duration: 10s;
+  background-color: bisque;
+  animation-iteration-count: 3;
+}
+
+.transition {
+  background-color: brown;
+  transition: width 1s, transform 3s; /* to make animation sleek instead of instant */
+}
+
+.transition:hover {
+  /* hover is a selector; transition only activates when you
+  hover over the object */
+  width: 350px;
+  transform: translate(200px);
+  /* caveat: animation is janky when mouse doesn't follow */
+}
+
+
+.rotate-element {
+  transform: rotate(45deg);
+  background-color: green;
+}
+
+.scale-element {
+  transform: scale(2);
+  background-color: pink;
+}
+
+.skew-element {
+  transform: skew(30deg, 20deg);
+  /* transform: skewX(-30deg); */
+  /* transform: skewY(-20deg); */
+  background-color: aliceblue;
+}
+
+.translate-element {
+  transform: translate(50px, 20px);
+  /* transform: translateX(50px);
+  transform: translateY(20px); */
+  background-color: rebeccapurple;
+}
+
+.combined-transform {
+  transform: rotate(45deg) scale(1.5) skew(10deg, 5deg) translate(20px,10px);
+  background-color: goldenrod;
+}

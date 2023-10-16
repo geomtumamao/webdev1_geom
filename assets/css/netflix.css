@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(15, 15, 15);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid-container{
+    display: grid;    
+    grid-template-columns: auto 150px 150px 150px 150px 150px auto;
+    gap: 20px;
+}
+
+.grid-item {
+    text-align: center;
+    color: gray;
+}
+
+#header {
+    grid-column: 1 / span 7;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+#profile1{
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    background-color: blueviolet;
+}
+
+#profile2{
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    background-color: yellowgreen;
+}
+
+#profile3{
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    background-color: aqua;
+}
+
+#profile4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 2%;
+    background-color: red;
+}
+
+#button {
+    height: 50px;
+    width: 50px;
+    background-color: grey;
+    border-radius: 50%;
+    margin: auto auto auto auto;
+}
+
+#label {
+    width: 150px;
+    text-align: center;
+}
+
+#manage {
+    grid-column: 1 / span 7;
+    width: 175px;
+    border: 2px solid gray;
+    text-align: center;
+    color: gray;
+    margin: 50px auto auto auto;
+    padding: 10px;
+}
+

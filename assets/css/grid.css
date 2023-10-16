@@ -1,0 +1,35 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 300px auto 200px;
+  /* column and row should not be in conflict */
+}
+
+.grid-item {
+  background-color: azure;
+  border: 1px solid black;
+  text-align: center;
+  padding: 20px;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 170px 170px;
+  gap: 10px;
+}
+
+#hero {
+  background-color: orangered;
+  grid-column: 1 / span 2;
+}
+
+#sidebar {
+  background-color: orange;
+  grid-column: 3;
+  grid-row: span 2;
+}
+
+.content {
+  background-color: olive;
+}

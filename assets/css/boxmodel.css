@@ -1,0 +1,30 @@
+#box1,
+#box2,
+#box3 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid blue;
+    border-color: red;
+    padding: 30px;
+    /* border-radius: 50%; */
+}
+
+#box1 {
+    padding: 10px 20px 30px 40px;
+    padding-left: 10px;
+    padding-top: 200px;
+    /* CSS takes in the LATEST declaration */
+    border-top: 3px dashed orange;
+    border-right-color: gold;
+    border-right-style: dotted;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#box2 {
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: pink;
+    margin-right: 100px;
+    margin-left: 200px;
+}
