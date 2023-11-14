@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geomarie Tumamao</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { 
+          'white': { DEFAULT: '#ffffff', 100: '#333333', 200: '#666666', 300: '#999999', 400: '#cccccc', 500: '#ffffff', 600: '#ffffff', 700: '#ffffff', 800: '#ffffff', 900: '#ffffff' }, 
+          'pink': { DEFAULT: '#ffcad4', 100: '#5c0011', 200: '#b80022', 300: '#ff143f', 400: '#ff708a', 500: '#ffcad4', 600: '#ffd6de', 700: '#ffe0e6', 800: '#ffebee', 900: '#fff5f7' }, 
+          'light_blue': { DEFAULT: '#b0d0d3', 100: '#1c3032', 200: '#386063', 300: '#548f95', 400: '#7fb2b7', 500: '#b0d0d3', 600: '#c0d9dc', 700: '#d0e3e5', 800: '#e0eced', 900: '#eff6f6' }, 
+          'puce': { DEFAULT: '#c08497', 100: '#2b161d', 200: '#562c3a', 300: '#814356', 400: '#aa5b74', 500: '#c08497', 600: '#cd9ead', 700: '#dab6c1', 800: '#e6cfd6', 900: '#f3e7ea' }, 
+          'melon': { DEFAULT: '#f7af9d', 100: '#4b1406', 200: '#95270c', 300: '#e03b12', 400: '#f17151', 500: '#f7af9d', 600: '#f9beb0', 700: '#facec4', 800: '#fcdfd7', 900: '#fdefeb' } 
+          }
+        }
+      }
+    }
+  </script>
+  <link href="assets/css/capstone.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <!-- Nav bar -->
+  <div class="fixed top-0 left-0 z-50 w-full melon-bg">
+    <div class="px-1 py-1" id = "header">
+      <div class="flex items-center justify-between">
+        <nav class="mx-auto">
+          <ul class="flex items-center justify-between">
+            <li class="px-6 py-4">
+              <a href="#home" class="text-white hover:text-[#b0d0d3] rounded-md px-3 py-2 text-sm font-medium">Home</a>
+            </li>
+            <li class="px-6 py-4"> 
+              <a href="#about" class="text-white hover:text-[#b0d0d3] rounded-md px-3 py-2 text-sm font-medium">About Me</a>
+            </li>
+            <li class="px-6 py-4">                            
+              <a href="#gallery" class="text-white hover:text-[#b0d0d3] rounded-md px-3 py-2 text-sm font-medium">Gallery</a>
+            </li>
+            <li class="px-6 py-4">
+              <a href="#contact-us" class="text-white hover:text-[#b0d0d3] rounded-md px-3 py-2 text-sm font-medium">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <!-- Actual Body -->
+  <div class="main" id="main">
+    
+    <!-- Home -->
+    <div class="h-screen py-4 md:py-2 pink-bg item" id="home">
+      <div class="container flex flex-col lg:flex-row items-center justify-center gap-4 px-4 md:px-8 mx-auto">
+          <!-- Picture -->
+          <div class="flex px-4 md:px-16 lg:px-16 basis-1/2">
+            <img src="assets/img/portrait.jpeg" class="portrait w-3/4">
+          </div>
+          <!-- Text Beside Picture -->
+          <div class="relative flex mt-0 md:mt-16 lg:mt-0 basis-1/2">
+            <div class="mx-auto my-4 pr-8">
+              <h2 class="heading !leading-normal text-3xl lg:text-4xl">
+                Geomarie Tumamao
+              </h2>
+              <p class="text-gray-500 dark:text-gray-400 opacity-90 text-base">
+                An aspiring web developer, interested in crafting user-friendly solutions through technology.
+              </p>
+            </div>
+          </div>  
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="py-20 md:py-24 puce-bg" id="about">
+      <div class="container items-stretch px-4 mx-auto">
+        <!-- Bio -->
+        <div class="w-3/4 pb-6 ml-16 mx-auto text-start">
+          <h2 class="heading text-3xl lg:text-5xl !leading-normal md-6">Geomarie Tumamao</h2>
+          <p class="text-pink text-l md-6">
+            I am an electronics engineering student in my final year, with research interests in artificial intelligence and
+            computer networks. My passion revolves around learning about new technologies and how they can be made accessible
+            and tailored to the needs of the people. I have gotten involved in many activities facilitating organizational
+            growth and I am always looking forward to learn more and help others learn. 
+          </p>
+        </div>         
+      </div>
+      
+      <!-- Resume Part -->
+      <div class="container flex flex-col lg:flex-row items-stretch justify-center gap-8 px-4 md:px-10 lg:px-0 mx-auto pink-bg">
+        <!-- Left column -->
+        <div class="ticket basis-1/3 ml-0 lg:ml-8">
+            <div class="py-2 px-6 lg:px-12 my-4">
+              <div class="form-title">
+                <h2 class="heading text-xl font-bold !leading-normal">
+                  Personal Information
+                </h2>
+                <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                  Bulacan, Bulacan </br>
+                  +63 945 297 2901 </br>
+                  tumamaogem91099@gmail.com </br>
+                </p>
+                <img src="assets/img/linkedin.png">
+                <a href="https://www.linkedin.com/in/geomarie-tumamao/" class="text-gray-500 hover:text-white text-opacity-90 text-base font-semibold">
+                  linkedin.com/in/geomarie-tumamao
+                </a></br>
+                <img src="assets/img/github.png">
+                <a href="https://github.com/geomtumamao" class="text-gray-500 hover:text-white text-opacity-90 text-base font-semibold">
+                  github.com/geomtumamao
+                </a>
+              </div>
+            </div>
+            <div class="py-2 px-6 lg:px-12 my-4">
+              <div class="form-title">
+                <h2 class="heading text-xl font-bold !leading-normal">
+                  Professional Skills
+                </h2>
+                <p class="text-gray-500 dark:text-gray-500 text-opacity-90 text-base font-semibold">
+                  Competent management and leadership skills </br>
+                  Competent communication skills </br>
+                  Problem-solving and debugging </br>
+                  Willingness to learn </br>
+                </p>
+              </div>
+            </div>
+            <div class="py-2 px-6 lg:px-12 my-4">
+              <div class="form-title">
+                <h2 class="heading text-xl font-bold !leading-normal">
+                  Programming Languages
+                </h2>
+                <p class="text-gray-500 dark:text-gray-500 text-opacity-90 text-base font-semibold">
+                  HTML </br>
+                  Javascript </br>
+                  CSS, Tailwind CSS </br>
+                  Python </br>
+                  C/C++ </br>
+                </p>
+              </div>
+            </div>
+            
+        </div>
+
+        <!-- Right column -->
+        <div class="subscribe basis-2/3 mr-0 lg:mr-8 rounded pink-bg">
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h2 class="heading text-xl font-bold !leading-normal">
+                Experience
+              </h2>
+              </br>
+              <h3 class="heading text-base font-bold !leading-normal">
+                Personal Technical and Research Assistant
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>July 2021 - November 2021</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>Assisted in the facilitation and documentation of events under multiple NGOs
+                  (e.g. The Policy Center, Freedom from Debt Coalition)
+                </li>
+                <li>
+                  Assisted in writing a technical report on the knowledge and perception of people 
+                  on COVID-19 vaccines
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h3 class="heading text-base font-bold !leading-normal">
+                Assistant Vice President for Income Generating Projects -
+                UP Engineering Radio Guild
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>August 2019 - July 2020</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>
+                  Managed income generating projects (IGPs) to fund the organizations activities
+                  and maintained good relations with suppliers for both small-scale IGPs and largescale
+                  event fundraisers
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h3 class="heading text-base font-bold !leading-normal">
+                Vice President for Finance - UP Engineering Radio Guild
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>July 2020 - September 2021</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>
+                  Spearheaded transition of financial operations into a remote setting, e.g. by
+                  restructuring the management of the org's merchandise page, repurposing
+                  committee handbook to have protocols adaptable for remote setting
+                </li>
+                <li>
+                  Supervised the accounts, income generating projects and marketing
+                  subcommittees of the organization, alongside aiding and supervising finance and
+                  marketing heads of events
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h2 class="heading text-xl font-bold !leading-normal">
+                Education
+              </h2>
+              </br>
+              <h3 class="heading text-base font-bold !leading-normal">
+                Bachelor of Science in Electronics Engineering - University of the 
+                Philippines Diliman
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>2018-2024</em> </br>
+                DOST Merit Scholar </br>
+                University Scholar - AY 2018-2019 1st Semester
+              </p> 
+            </div>
+          </div>
+
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h2 class="heading text-xl font-bold !leading-normal">
+                Projects
+              </h2>
+              </br>
+              <h3 class="heading text-base font-bold !leading-normal">
+                UHC Conversations - HPA & SWP-ABI Health
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>June 2022 - July 2022</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>
+                  Assisted in the facilitation and documentation of focus group discussions among
+                  various stakeholders regarding the state of universal health care in the country
+                </li>
+                <li>
+                  Assisted in the writing, editing and layout of the final collated report for
+                  distribution among stakeholders
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="py-2 px-6 lg:px-12 my-4">
+            <div class="form-title">
+              <h3 class="heading text-base font-bold !leading-normal">
+                Chill Ikot: Jumpstart - UP Engineering Radio Guild
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>2019 - 2020</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>
+                  <em>2019 Finance Co-head:</em>
+                  Managed income generating projects (IGPs) to fund the organizations activities
+                  and maintained good relations with suppliers for both small-scale IGPs and largescale
+                  event fundraisers </br>
+                </li>
+                <li>
+                  <em>2020 Finance and Marketing Head</em>
+                  Headed income generating projects and marketing proposals in the transition to
+                  the online setup
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="py-2 px-6 lg:px-12 mb-16">
+            <div class="form-title">
+              <h3 class="heading text-base font-bold !leading-normal">
+                Synergy: Electrical and Electronics Engineering Summit - 
+                UP Engineering Radio Guild
+              </h3>
+              <p class="text-gray-500 text-opacity-90 text-base font-semibold">
+                <em>2019-2021</em> </br>
+              </p>
+              <ul class="list-disc list-inside text-gray-500 text-opacity-90 text-base font-semibold">
+                <li>
+                  <em>Software Solutions 2019 Core Team: </em>
+                  Co-developed the mechanics for a software developing competition geared
+                  towards providing sustainable solutions to a specific problem provided by a partner company
+                </li>
+                <li>
+                  <em>Synergy 2021 Finance Co-Head</em>
+                  Managed the income generating projects and coordinated logistics for prizes and
+                  tokens for the organization's flagship event
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+    </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="py-20 md:py-24 puce-bg" id="gallery">
+      <div class="container px-4 mx-auto">
+        <div class="w-3/4 mx-auto text-center">
+          <h2 class="heading text-3xl lg:text-5xl !leading-normal">Project Gallery</h2>
+          <p class="text-pink text-xl">
+            These are some of the previous websites I have done while learning about web development.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-col">
+        <article class="flex flex-col items-center justify-center mt-10 md:flex-row">
+          <img alt="carrd sample" width="450" height="250" class="relative md:w-[450px] w-full ml-4 h-[250px] rounded-lg object-contain" 
+          style="color:transparent" src="assets/img/carrd_sample.PNG">
+          <div class="ml-2 mt-5 md:mt-0 md:ml-20">
+            <h3 class="text-3xl font-semibold text-neon">Canon Character Profile</h3>
+            <p class="text-textDark mt-3 md:max-w-[700px]">
+              An introductory website regarding a video game character, made through carrd.co and taking inspiration from common character carrd aesthetics.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a class="flex items-center px-5 py-2 border-2 rounded-lg text-gray-500 pink-bg border-pink 
+                hover:bg-transparent hover:text-white" href="http://kislapislazuli.carrd.co">
+                Visit
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col items-center justify-center mt-10 md:flex-row">
+          <img alt="first carrd" width="450" height="250" class="relative md:w-[450px] w-full ml-4 h-[250px] rounded-lg object-contain" 
+          style="color:transparent" src="assets/img/bulan_carrd.PNG">
+          <div class="ml-2 mt-5 md:mt-0 md:ml-20">
+            <h3 class="text-3xl font-semibold text-neon">Original Character Profile</h3>
+            <p class="text-textDark mt-3 md:max-w-[700px]">
+              An introductory website regarding an original character, made through carrd.co as a starting point in website design.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a class="flex items-center px-5 py-2 border-2 rounded-lg text-gray-500 pink-bg border-pink 
+                hover:bg-transparent hover:text-white" href="https://bakunawain.carrd.co/">
+                Visit
+              </a>
+            </div>
+          </div>
+        </article>
+        <article class="flex flex-col items-center justify-center mt-10 md:flex-row">
+          <img alt="calc app" width="450" height="250" class="relative md:w-[450px] w-full ml-4 h-[250px] rounded-lg object-contain" 
+          style="color:transparent" src="assets/img/calc_app.PNG">
+          <div class="ml-2 mt-5 md:mt-0 md:ml-20">
+            <h3 class="text-3xl font-semibold text-neon">Calculator App</h3>
+            <p class="text-textDark mt-3 md:max-w-[700px]">
+              An attempt at recreating the functions of a calculator through a simple web app. The link redirects to the pull request
+              of the homework.
+            </p>
+            <div class="flex mt-4 space-x-4">
+              <a class="flex items-center px-5 py-2 border-2 rounded-lg text-gray-500 pink-bg border-pink 
+                hover:bg-transparent hover:text-white" href="https://github.com/geomtumamao/webdev1_geom/pull/4">
+                Visit
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>  
+
+    <!-- Contact Us -->
+    <div class="contact-us py-16 puce-bg" id="contact-us">
+      <div class="container flex flex-col lg:flex-row items-stretch justify-center gap-8 px-4 md:px-10 lg:px-0 mx-auto">
+          <div class="ticket basis-2/3 ml-0 lg:ml-8 pink-bg rounded">
+              <div class="py-16 px-6 lg:px-12">
+                  <div class="form-title">
+                      <h2 class="heading text-2xl lg:text-3xl font-bold !leading-normal">
+                          Contact Us
+                      </h2>
+                  </div>
+                  <div class="form-contact mt-10">
+                      <form action="#">
+                          <div class="flex flex-col lg:flex-row justify-center items-center mt-2 mb-6">
+                              <div class="flex flex-col basis-full w-full lg:basis-1/2 mr-0 lg:mr-3 my-3 lg:my-0">
+                                  <label for="name" class="form-label">Name</label>
+                                  <input type="text" id="name" class="form-input" required
+                                         placeholder="Enter Your Name">
+                              </div>
+                              <div class="flex flex-col basis-full w-full lg:basis-1/2 ml-0 lg:ml-3 my-3 lg:my-0">
+                                  <label for="email" class="form-label">Email</label>
+                                  <input type="email" id="email" class="form-input" required
+                                         placeholder="Enter Your Email">
+                              </div>
+                          </div>
+                          <div class="flex flex-col my-4">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="subject" id="subject" class="form-input" required
+                                   placeholder="Subject">
+                          </div>
+                          <div class="flex flex-col my-4">
+                              <label for="message" class="form-label">Message</label>
+                              <textarea name="message" id="message" cols="30" rows="5"
+                                        placeholder="Enter Your Message" class="resize-none form-input"
+                                        required></textarea>
+                          </div>
+                          <div class="mt-4">
+                              <button type="submit" class="btn bg-[#f7af9dff] opacity-90 px-6 py-3">Send</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          </div>
+      </div>
+  </div>
+
+  </div>
+  
+  <!-- Footer -->
+  <div class="fixed bottom-0 left-0 z-50 w-full melon-bg">
+    <div class="px-4 py-2 w-1/2 mx-auto" id = "Footer">
+      <div class="flex mx-20 items-center justify-between">
+        <p class="text-white">&copy Geomarie Tumamao</p>
+        <p class="text-white">   |   </p>
+        <a href="#" class="text-white hover:text-[#b0d0d3]">Terms and Conditions</a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="assets/js/capstone.js"></script>
+</html>
