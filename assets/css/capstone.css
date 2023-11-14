@@ -1,0 +1,22 @@
+/* Palette link: https://coolors.co/ffffff-ffcad4-b0d0d3-c08497-f7af9d 
+--white: #ffffffff;
+--pink: #ffcad4ff;
+--light-blue: #b0d0d3ff;
+--puce: #c08497ff;
+--melon: #f7af9dff; */
+
+.pink-bg {
+    background-color: #ffcad4ff;
+}
+
+.puce-bg {
+    background-color: #c08497ff;
+}
+
+.melon-bg {
+    background-color: #f7af9dff;
+}
+
+.portrait {
+    border-radius: 50%100px;
+}
